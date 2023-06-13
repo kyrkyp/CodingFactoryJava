@@ -5,6 +5,9 @@ package gr.aueb.cf.ch11;
  */
 public class MainApp {
     public static void main(String[] args) {
+
+        HelloUtil.sayHello();
+
         Student alice = new Student();
         Student bob = new Student(2, "Bod", "D");
 
