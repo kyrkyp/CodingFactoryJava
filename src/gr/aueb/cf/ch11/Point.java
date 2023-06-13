@@ -1,5 +1,7 @@
 package gr.aueb.cf.ch11;
 
+import java.util.Random;
+
 /**
  * A simple {@link Point} Java Bean.
  *
@@ -20,6 +22,15 @@ public class Point {
 
     public int getX() {
         return x;
+    }
+
+    public static Point getPoint() {
+        return new Point();
+    }
+
+    public static Point getRandomPoint() {
+        Random rnd = new Random(System.currentTimeMillis());
+        return new Point(rnd.nextInt(101), rnd.nextInt(101));
     }
 
     public void setX(int x) {
