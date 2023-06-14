@@ -18,9 +18,15 @@ public class Point3D extends Point2D {
         this.z = z;
     }
 
+//    @Override
+//    public String convertToString() {
+//        return super.convertToString() + "(" + z + ")";
+//    }
+
+
     @Override
-    public String convertToString() {
-        return super.convertToString() + "(" + z + ")";
+    public String toString() {
+        return "(" + getX() + ", " + getY() + ", " + getZ() + ")";
     }
 
     @Override

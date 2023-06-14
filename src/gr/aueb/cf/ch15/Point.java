@@ -17,7 +17,12 @@ public class Point {
         this.x = x;
     }
 
-    public String convertToString() {
+//    public String convertToString() {
+//        return "(" + x + ")";
+//    }
+
+    @Override
+    public String toString() {
         return "(" + x + ")";
     }
 
@@ -25,6 +30,9 @@ public class Point {
         x += 1;
     }
 
+    /**
+     * @ImplSpec
+     */
     public void movePlus10() {
         // x += 10;
 
